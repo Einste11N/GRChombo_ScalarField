@@ -7,13 +7,13 @@
 verbosity = 0
 
 # location / naming of output files
-output_path = "/Users/jiangyuer/Desktop/Learning/GRChombo-main/Examples/ScalarField/Outputs" # Main path for all files. Must exist!
+output_path = "" # Main path for all files. Must exist!
 chk_prefix = ScalarField_
 plot_prefix = ScalarFieldp_
 # restart_file = ScalarField_000060.3d.hdf5
 
 # HDF5files are written every dt = L/N*dt_multiplier*checkpoint_interval
-checkpoint_interval = 1
+checkpoint_interval = 500
 # set to 0 to turn off plot files (except at t=0 and t=stop_time)
 # set to -1 to never ever print plotfiles
 plot_interval = 1
@@ -41,10 +41,10 @@ print_progress_only_to_rank_0 = 1
 # Here we decouple the evolution so the scalar evolved on the
 # metric background without backreaction (this avoids the need
 # to solve the constaints)
-G_Newton = 0.0
+G_Newton = 1.0
 
 # Scalar field initial data
-scalar_amplitude = 0.1
+scalar_amplitude = 1.0
 scalar_width = 5.0
 scalar_mass = 0.2
 
@@ -127,7 +127,7 @@ extrapolating_vars = phi Pi
 
 # dt will be dx*dt_multiplier on each grid level
 dt_multiplier = 0.25
-stop_time = 1.0
+stop_time = 100.0
 # max_steps = 100
 
 # Spatial derivative order (only affects CCZ4 RHS)
