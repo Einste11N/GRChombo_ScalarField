@@ -1,7 +1,7 @@
 # GRChombo_ScalarField
 
 
-cd GRChombo-main/Examples/ScalarField
+cd GRChombo-main/Examples/ScalarFieldnexttoPBH
 
 
 make realclean
