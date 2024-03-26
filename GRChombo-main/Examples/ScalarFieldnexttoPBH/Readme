@@ -1,0 +1,3 @@
+The black hole is placed at (64,0,0) and the bubble center is at (104,0,0)
+
+Periodic BCs for x and reflective BCs for y and z directions.
