@@ -1,0 +1,4 @@
+The parameters are given in params_m05.txt, where m05 stands for m_{BH}=0.5
+
+maximum non linear outside loop iterations = 600
+maximum level = 6
